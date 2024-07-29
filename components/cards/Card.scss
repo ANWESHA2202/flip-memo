@@ -1,0 +1,31 @@
+.card {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  color: #ecf0f1;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  transition: transform 0.5s ease-in-out;
+  backface-visibility: hidden;
+  font-size: 4rem;
+  background: linear-gradient(to right, #000, #000000c9);
+}
+.face-back {
+  transform: rotateY(180deg);
+}
+.card:hover .face-front {
+  transform: rotateY(-180deg);
+}
+.card:hover .face-back {
+  transform: rotateY(0deg);
+}

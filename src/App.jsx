@@ -1,5 +1,12 @@
+//component imports
+import FlipMemo from "../modules/FlipMemo";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <FlipMemo />
+    </>
+  );
 }
 
 export default App;
